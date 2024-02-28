@@ -34,25 +34,42 @@ git push -u origin master - загружаем в удаленный репоз�
 ## Основные команды
 
 cd (~   ..   /)
+
 ls (-a) - list 
+
 pwd - print work directory
+
 cp - copy
+
 mv - move
+
 touch - new file
+
 mkdir - make directory
+
 cat - read file
+
 rm - remove file
+
 rmdir - remove dir
+
 && - commands together
 
+
 git init
+
 git add (--all   .)
+
 git status - проверка статуса
+
 git commit -m 'message'
+
 git push (-u origin master - делается только первый раз)
+
 git log - список коммитов
 
 git remote add (name, ssh) - связать удаленный репозиторий с локальным
+
 git remote -v - проверка связи
 
 ## Выделение текста
