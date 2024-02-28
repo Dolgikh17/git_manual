@@ -67,10 +67,15 @@ echo '' >> file.txt - запишет в файл в конце
 
 echo '' > file.txt - перезапишет файл с начала
 
+## Основные команды Git
 
 git init
 
 git add (--all   .)
+
+git diff - сравнит последнюю закоммиченную версию файла с той, что находится в состоянии modified
+
+git diff --staged - покажет изменения в staged-файлах относительно последних закоммиченных версий
 
 git restore --staged [fileName] (.) - выполнить unstage изменений
 
@@ -83,6 +88,8 @@ git commit -m 'message'
 git commit --amend --no-edit - (--amend - изменить; --no-edit - оставить название коммита прежним)
 
 git commit --amend -m 'NewName' - изменить название коммита
+
+git reset --hard [commit hash] - откатить коммит, все коммиты выше него будут удалены
 
 git push (-u origin master - делается только первый раз)
 
