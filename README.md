@@ -63,10 +63,18 @@ rmdir - remove dir
 
 && - commands together
 
+echo '' >> file.txt - запишет в файл в конце
+
+echo '' > file.txt - перезапишет файл с начала
+
 
 git init
 
 git add (--all   .)
+
+git restore --staged [fileName] (.) - выполнить unstage изменений
+
+git restore [file] - откатить изменения, которые не попали ни в staging, ни в коммит. Может быть так, что вы случайно изменили файл, который не планировали. Теперь он отображается в Changes not staged for commit (modified). Чтобы вернуть всё «как было», можно выполнить команду git restore [file].
 
 git status - проверка статуса
 
