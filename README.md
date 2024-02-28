@@ -102,6 +102,14 @@ git remote -v - проверка связи
       modified-- "git add" -->staged_+tracked;
 ```
 
+```mermaid
+  graph TD;
+      untracked-- "git add" -->staged_+tracked;
+      staged_+tracked-- "git commit" -->tracked;
+      tracked-- "изменения" -->modified;
+      modified-- "git add" -->staged_+tracked;
+```
+
 untracked - новый файл не был проиндексирован (git add)
 
 tracked - файл был проиндексирован или был закомиичен (git add / git commit)
