@@ -88,10 +88,10 @@ git remote -v - проверка связи
 
 ```mermaid
   graph TD;
-      untracked-->staged(tracked);
-      staged(tracked)-->tracked;
+      untracked-->staged_+tracked;
+      staged_+tracked-->tracked;
       tracked-->modified;
-      modified-->staged(tracked);
+      modified-->staged_+tracked;
 ```
 
 untracked - новый файл не был проиндексирован (git add)
