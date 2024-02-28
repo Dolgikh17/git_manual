@@ -72,6 +72,10 @@ git status - проверка статуса
 
 git commit -m 'message'
 
+git commit --amend --no-edit - (--amend - изменить; --no-edit - оставить название коммита прежним)
+
+git commit --amend -m 'NewName' - изменить название коммита
+
 git push (-u origin master - делается только первый раз)
 
 git log - список коммитов
@@ -85,22 +89,6 @@ git remote add (name, ssh) - связать удаленный репозито�
 git remote -v - проверка связи
 
 ## Статусы файлов:
-
-```mermaid
-  graph TD;
-      untracked-->staged_+tracked;
-      staged_+tracked-->tracked;
-      tracked-->modified;
-      modified-->staged_+tracked;
-```
-
-```mermaid
-  graph LR;
-      untracked-- "git add" -->staged_+tracked;
-      staged_+tracked-- "git commit" -->tracked;
-      tracked-- "изменения" -->modified;
-      modified-- "git add" -->staged_+tracked;
-```
 
 ```mermaid
   graph TD;
