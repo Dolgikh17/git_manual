@@ -126,22 +126,25 @@ git merge [название_ветки] - выполнить слияние ве
 
 git branch -D [<название_ветки] - удалить ветку после объединения
 
-git diff [название_ветки1] [название_ветки2] - сравнение двух веток (так же можно использовать master & HEAD)
+git diff [название_ветки1] [название_ветки2] - 
+      - сравнение двух веток (так же можно использовать master & HEAD)
 
-git diff HEAD~N HEAD (commit~; HEAD~; master~) - разница между коммитом №N с конца и коммитом HEAD (нумерация для ~ начинается с 0)
+git diff HEAD~N HEAD (commit~; HEAD~; master~) - 
+      - разница между коммитом №N с конца и коммитом HEAD (нумерация для ~ начинается с 0)
 
 ```
-  $ git checkout main - перешли в main
 
-  $ git pull - подтянули новые изменения в main
-
-  $ git checkout my-branch - вернулись в рабочую ветку my-branch
-
-  $ git merge main - влили main в новую ветку my-branch
-
-  $ git push -u origin my-branch - отправили ветку my-branch в удалённый репозиторий
+Перед созданием пул-реквеста рекомендуется сначала подтянуть изменения из основной ветки, объединить их с вашей, решить все возможные конфликты и лишь затем сделать push.
 ```
+  git checkout main - перешли в main
 
+  git pull - подтянули новые изменения в main
+
+  git checkout my-branch - вернулись в рабочую ветку my-branch
+
+  git merge main - влили main в новую ветку my-branch
+
+  git push -u origin my-branch - отправили ветку my-branch в удалённый репозиторий
 ```
 
 ## Git ignore
